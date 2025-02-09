@@ -294,6 +294,8 @@ class _AddMedicineScreenState extends State<AddMedicineScreen> {
               ),
               DropdownButton<String>(
                 value: frequency,
+                borderRadius: BorderRadius.circular(12),
+                dropdownColor: Colors.white,
                 items: ['Everyday', 'Alternate Days', 'Custom'].map((e) {
                   return DropdownMenuItem(value: e, child: Text(e));
                 }).toList(),
